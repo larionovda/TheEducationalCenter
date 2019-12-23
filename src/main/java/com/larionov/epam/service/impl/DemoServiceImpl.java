@@ -11,7 +11,7 @@ public class DemoServiceImpl implements DemoService {
     Students students = new Students();
     Calculation calculation = new CalculationImpl();
 
-    public void service(){
+    public void service() {
         Student student1 = students.initStudent1();
         Student student2 = students.initStudent2();
         Student student3 = students.initStudent3();
@@ -25,6 +25,6 @@ public class DemoServiceImpl implements DemoService {
         System.out.println("СОРТИРОВКА ПО СРЕДНЕЙ ОЦЕНКЕ");
         sorting.sortAverageAssessments(student1, student2, student3);
         System.out.println("СОРТИРОВКА ПО КОЛИЧЕСТВУ ОСТАВШИХСЯ ДНЕЙ");
-        sorting.sortFinalDate(student1,student2,student3);
+        sorting.sortFinalDate(student1, student2, student3);
     }
 }
