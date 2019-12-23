@@ -4,22 +4,34 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Student implements Comparable<Student> {
-    /** Имя студента. */
+    /**
+     * Имя студента.
+     */
     private final String nameOfStudent;
 
-    /** Учебная программа, которая состоит из определенных курсов. */
+    /**
+     * Учебная программа, которая состоит из определенных курсов.
+     */
     private final TrainingProgram trainingProgram;
 
-    /** В этой Map содержатся оценки за определенные курсы, оценки выставляются каждый день. */
+    /**
+     * В этой Map содержатся оценки за определенные курсы, оценки выставляются каждый день.
+     */
     private List<Integer> assessments;
 
-    /** Дата, определяющая начало выполнения тренеровочной программы */
+    /**
+     * Дата, определяющая начало выполнения тренеровочной программы
+     */
     private LocalDate startDate;
 
-    /** Средний бал студента */
+    /**
+     * Средний бал студента
+     */
     private double averageAssessment;
 
-    /** Переменная содержит количество дней до окончания учебной программы */
+    /**
+     * Переменная содержит количество дней до окончания учебной программы
+     */
     private int leftDays;
 
     public Student(String nameOfStudent, TrainingProgram trainingProgram, List<Integer> assessments, LocalDate startDate) {

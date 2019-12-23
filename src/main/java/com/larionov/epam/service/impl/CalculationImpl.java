@@ -48,7 +48,7 @@ public class CalculationImpl implements Calculation {
     public int calcSumOfAssessments(Student student) {
         int sumAssessments = 0;
         List<Integer> assessments = student.getAssessments();
-        for (Integer integer: assessments){
+        for (Integer integer : assessments) {
             sumAssessments += integer;
         }
         return sumAssessments;
@@ -58,7 +58,7 @@ public class CalculationImpl implements Calculation {
     public int calcAllDayOfProgram(Student student) {
         double allHoursOfCourses = 0;
         List<Course> courses = student.getTrainingProgram().getCourses();
-        for (Course course: courses){
+        for (Course course : courses) {
             allHoursOfCourses += course.getDurationHrs();
         }
         return (int) ceil(allHoursOfCourses / HOURS_OF_DAY);

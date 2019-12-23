@@ -32,7 +32,7 @@ public class Students {
         LocalDate startDate = LocalDate.of(2019, 12, 16);
         TrainingProgram trainingProgram = new TrainingProgram("J2EE Developer", courses);
 
-        Student student = new Student("Ivan Ivanov",  trainingProgram, assessments, startDate);
+        Student student = new Student("Ivan Ivanov", trainingProgram, assessments, startDate);
         student.setAverageAssessment(calculation.calcAverageAssessment(student));
         student.setLeftDays(calculation.calcHowLeftDays(student));
         return student;
@@ -59,7 +59,7 @@ public class Students {
         LocalDate startDate = LocalDate.of(2019, 12, 16);
         TrainingProgram trainingProgram = new TrainingProgram("Java Developer ", courses);
 
-        Student student = new Student("Petr Petrov",  trainingProgram, assessments, startDate);
+        Student student = new Student("Petr Petrov", trainingProgram, assessments, startDate);
         student.setAverageAssessment(calculation.calcAverageAssessment(student));
         student.setLeftDays(calculation.calcHowLeftDays(student));
         return student;
@@ -86,7 +86,7 @@ public class Students {
         LocalDate startDate = LocalDate.of(2019, 12, 16);
         TrainingProgram trainingProgram = new TrainingProgram("Developer ", courses);
 
-        Student student = new Student("Roma Romanov",  trainingProgram, assessments, startDate);
+        Student student = new Student("Roma Romanov", trainingProgram, assessments, startDate);
         student.setAverageAssessment(calculation.calcAverageAssessment(student));
         student.setLeftDays(calculation.calcHowLeftDays(student));
         return student;
