@@ -1,4 +1,6 @@
-package com.larionov.epam.entity;
+package com.larionov.epam.comparator;
+
+import com.larionov.epam.entity.Student;
 
 import java.util.Comparator;
 

@@ -7,12 +7,12 @@ public class Student implements Comparable<Student> {
     /**
      * Имя студента.
      */
-    private final String nameOfStudent;
+    private String nameOfStudent;
 
     /**
      * Учебная программа, которая состоит из определенных курсов.
      */
-    private final TrainingProgram trainingProgram;
+    private TrainingProgram trainingProgram;
 
     /**
      * В этой Map содержатся оценки за определенные курсы, оценки выставляются каждый день.

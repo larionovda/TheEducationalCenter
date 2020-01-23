@@ -6,7 +6,6 @@ import com.larionov.epam.service.Calculation;
 
 import java.time.LocalDate;
 import java.util.List;
-
 import static java.lang.Math.ceil;
 
 public class CalculationImpl implements Calculation {
@@ -46,21 +45,15 @@ public class CalculationImpl implements Calculation {
 
     @Override
     public int calcSumOfAssessments(Student student) {
-        int sumAssessments = 0;
         List<Integer> assessments = student.getAssessments();
-        for (Integer integer : assessments) {
-            sumAssessments += integer;
-        }
-        return sumAssessments;
+        return assessments.stream().mapToInt(Integer::intValue).sum();
     }
 
     @Override
     public int calcAllDayOfProgram(Student student) {
         double allHoursOfCourses = 0;
         List<Course> courses = student.getTrainingProgram().getCourses();
-        for (Course course : courses) {
-            allHoursOfCourses += course.getDurationHrs();
-        }
+        allHoursOfCourses = courses.stream().mapToInt(Course::getDurationHrs).sum();
         return (int) ceil(allHoursOfCourses / HOURS_OF_DAY);
     }
 }

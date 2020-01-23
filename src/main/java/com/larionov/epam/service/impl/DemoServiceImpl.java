@@ -1,14 +1,14 @@
 package com.larionov.epam.service.impl;
 
 import com.larionov.epam.entity.Student;
-import com.larionov.epam.repository.Students;
+import com.larionov.epam.repository.StrudentsItitializer;
 import com.larionov.epam.service.Calculation;
 import com.larionov.epam.service.DemoService;
 
 public class DemoServiceImpl implements DemoService {
 
     SortingImpl sorting = new SortingImpl();
-    Students students = new Students();
+    StrudentsItitializer students = new StrudentsItitializer();
     Calculation calculation = new CalculationImpl();
 
     public void service() {

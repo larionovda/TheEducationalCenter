@@ -9,12 +9,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Students {
+public class StrudentsItitializer {
 
     CalculationImpl calculation = new CalculationImpl();
+    List<Course> courses = new ArrayList<Course>();
 
     public Student initStudent1() {
-        List<Course> courses = new ArrayList<Course>();
+
         courses.add(new Course("Технология Java Servlets", 16));
         courses.add(new Course("Struts Framework", 24));
         courses.add(new Course("Spring Framework", 48));

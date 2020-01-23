@@ -1,7 +1,7 @@
 package com.larionov.epam.service.impl;
 
 import com.larionov.epam.entity.Student;
-import com.larionov.epam.entity.StudentComparator;
+import com.larionov.epam.comparator.StudentComparator;
 import com.larionov.epam.service.PrintStudent;
 import com.larionov.epam.service.Sorting;
 
